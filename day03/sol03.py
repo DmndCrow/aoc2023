@@ -90,13 +90,13 @@ if __name__ == '__main__':
     sol.readInput('input.txt')
     print('part 1:', sol.part1())
 
-    # # verify part 2
+    # verify part 2
     stage2Solution = 467835
     example = Solution()
     example.readInput('ex2.txt')
     assert example.part2() == stage2Solution
 
-    # # solution part 2
+    # solution part 2
     sol2 = Solution()
     sol2.readInput('input.txt')
     print('part 2:', sol2.part2())
