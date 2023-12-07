@@ -1,16 +1,6 @@
 from enum import Enum
 from collections import defaultdict
 
-class Mapper(str, Enum):
-    SEED = 'seed'
-    SOIL = 'soil'
-    FERTILIZER = 'fertilizer'
-    WATER = 'water'
-    LIGHT = 'light'
-    TEMP = 'temperature'
-    HUMIDITY = 'humidity'
-    LOCATION = 'location'
-
 class Solution:
     def __init__(self):
         self.time = []
@@ -38,8 +28,6 @@ class Solution:
 
     
     def finishWays(self, time, distance):
-        res = 0
-
         i, j = 1, time - 1
         done_i, done_j = False, False
 
