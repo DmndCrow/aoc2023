@@ -78,8 +78,6 @@ class Solution:
             for j in range(self.seeds[i + 1]):
                 seeds.add(self.seeds[i] + j)
 
-        print(seeds)
-
         for seed in seeds:
             res = min(res, self.getLowestLocation(seed))
 
