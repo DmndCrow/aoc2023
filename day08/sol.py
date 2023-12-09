@@ -75,7 +75,7 @@ class Solution:
         # ex: if n = 5, then cycle will be 5 10 15 20 etc
 
         # using logic above we can find n for each initial location
-        # after that find first iteration at each all of them have same final destination (dest ends with Z)
+        # after that find first iteration at each all of them have same final destination (dest that ends with Z)
         while len(meets.keys()) < len(self.initial):
             side = 0 if self.actions[i] == 'L' else 1
 
@@ -114,10 +114,10 @@ if __name__ == '__main__':#
     print('part 1:', sol.part1())
 
     # verify part 2
-    # stage2Solution = 6
-    # example = Solution()
-    # example.readInput('ex2.txt')
-    # assert example.part2() == stage2Solution
+    stage2Solution = 6
+    example = Solution()
+    example.readInput('ex2.txt')
+    assert example.part2() == stage2Solution
 
     # solution part 2
     sol2 = Solution()
